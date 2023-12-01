@@ -13,6 +13,7 @@ router.get("/", ( req: Request, res: Response) => {
 
 router.post("/register", CustomerController.register)
 router.post("/login", CustomerController.login)
+router.get("/customers", CustomerController.find)
 router.patch("/customer/:id", CustomerController.update)
 router.delete("/customer/:id", CustomerController.delete)
 

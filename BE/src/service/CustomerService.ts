@@ -36,7 +36,7 @@ class AuthService {
             const existingUsername = await this.customerRepository.findOne({where:{username}})
 
             if (existingUsername) {
-                return res.status(400).json({ error: 'Email already exists' });
+                return res.status(400).json({ error: 'Username already exists' });
             } else {
                 const results = await this.customerRepository.save(customer)
                 return res.send(results)
