@@ -12,6 +12,7 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  Link,
 } from '@chakra-ui/react'
 
 export default function SimpleCard() {
@@ -58,6 +59,9 @@ export default function SimpleCard() {
                 }}>
                 Sign in
               </Button>
+              <Text align={'center'}>
+                Don't have an account? <Link href="/Signup" color={'blue.400'}>Register</Link>
+              </Text>
             </Stack>
           </Stack>
         </Box>
