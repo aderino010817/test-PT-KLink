@@ -19,6 +19,11 @@ import {
 import { useState } from 'react'
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 
+function register() {
+  const [form, setForm] = useState<({
+    
+  })
+}
 
 
 export default function SignupCard() {
