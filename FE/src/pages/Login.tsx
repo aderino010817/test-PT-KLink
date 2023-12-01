@@ -60,7 +60,7 @@ export default function SimpleCard() {
                 Sign in
               </Button>
               <Text align={'center'}>
-                Don't have an account? <Link href="/Signup" color={'blue.400'}>Register</Link>
+                Don't have an account? <Link href="/login" color={'blue.400'}>Login</Link>
               </Text>
             </Stack>
           </Stack>
