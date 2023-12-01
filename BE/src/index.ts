@@ -19,11 +19,11 @@ AppDataSource.initialize().then(async () => {
     app.use("/api/v1", router)
 
     app.get("/", (req: Request, res: Response) => {
-        res.send('hello cok world')
+        res.send('Hello K-Link!')
     })
 
     app.listen(port, () => {
-        console.log(`Server is running! at localhost:${port}`)
+        console.log(`Server is running! at "http://localhost:${port}"`)
     })
 
 }).catch(error => console.log(error))
